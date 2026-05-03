@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: trainee-payment-service
+  data:
+    mongodb:
+      auto-index-creation: true
+
+random-number-api:
+  base-url: https://www.random.org
