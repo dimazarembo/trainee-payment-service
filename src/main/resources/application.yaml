@@ -4,6 +4,15 @@ spring:
   data:
     mongodb:
       auto-index-creation: true
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health
+    endpoint:
+      health:
+        probes:
+          enabled: true
 
 random-number-api:
   base-url: https://www.random.org
